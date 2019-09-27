@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Sports Place</title>
+</head>
+<body>
+
+  <div class="w3-content">
+ <img class="mySlides" src="banner.jpeg" alt="custom_html_banner1" width="1333px" height="270px">
+ <img class="mySlides" src="banner.png" alt="custom_html_banner2" width="1333px" height="270px">
+ <img class="mySlides" src="banner.jpg" alt="custom_html_banner3" width="1333px" height="270px">
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div id='menu'>
+<ul>
+  <li class='active'><a href='index.html'>Sports Place</a></li>
+  <li><a href='Nosotros.html'>Nosotros</a></li>
+  <li><a href='Servicios.html'>Servicios</a></li>
+  <li><a href='Noticias.html'>Noticias</a></li>
+  <li><a href='Contactos.html'>Contacto</a></li>
+</ul>
+</div>
+
+<div class="texts">
+  <h2>Bienvenidos a Sports Place!</h2>
+  <h4>Donde encontraras te informaras sobre todo lo relacionado a los deportes.</h4>
+  <hr style="color: blue;">
+</div>
+<br>
+<div class="info">
+  <img src="sportsinfo.jpg" alt="imagen_deportes_info">
+  <h2 class="texts">En que consiste el deporte?</h2>
+  <p class="texts">El deporte es una actividad reglamentada, normalmente de carácter competitivo, que puede mejorar la condición física de quien lo practica, y además tiene propiedades que lo diferencian del juego.</p>
+
+<pre class="texts">La Real Academia Española, en su Diccionario de la lengua española, define deporte como una «actividad física,ejercida como juego o competición, cuya práctica supone entrenamiento
+y sujeción a normas»; también, en una segunda acepción, más amplia, como «recreación, pasatiempo, placer, diversión o ejercicio físico, por lo común al aire libre».
+
+​Por otra parte, la Carta Europea del deporte lo define como: «Todas las formas de actividades físicas que mediante una participación organizada o no, tienen como objetivo
+la expresión o la mejora de la condición física y psíquica, el desarrollo de las relaciones sociales o la obtención de resultados en competición de todos los niveles».</pre>
+</div>
+<hr>
+<br>
+
+<div class="">
+<img src="sportshistory.jpg" alt="deportes_imagen_historia">
+<h2 class="texts">Historia del deporte.</h2>
+<pre class="texts">Existen utensilios y estructuras que sugieren que los chinos ya realizaban actividades deportivas hace 4000 años, entre 1066-771 a. C.7​ La gimnasia parece
+haber sido un popular deporte en la Antigua China. Los monumentos a los emperadores indican que una cierta cantidad de deportes, incluyendo la natación y la pesca,
+fueron ya diseñados y regulados hace miles de años en el Antiguo Egipto. Otros deportes egipcios incluyen el lanzamiento de jabalina, el salto de altura y la lucha.
+Algunos deportes de la Antigua Persia como el arte marcial iraní de Zourkhaneh están ligados a las habilidades en la batalla.9​Entre otros deportes originales de Persia están
+el polo y la justa. Por otra parte, en América las culturas mesoamericanas como los mayas practicaban el llamado juego de pelota el cual a su vez era un ritual.
+
+Una amplia variedad de deportes estaban ya establecidos en la época de la Antigua Grecia, y la cultura militar y el desarrollo de los deportes en Grecia se influyeron mutuamente.
+Para los griegos el deporte era una parte muy importante de su cultura, por lo que crearon los Juegos Olímpicos, una competición que se disputó desde el año 777 a. C. hasta
+el año 394 d. C. cada cuatro años en Olimpia, una pequeña población en el Peloponeso griego.10​En 1896 se celebraron los primeros Juegos Olímpicos de la era moderna, en Atenas,
+gracias a la iniciativa del barón Pierre de Coubertin de recuperar el espíritu de los antiguos Juegos añadiendo un carácter internacional. Los Juegos Olímpicos modernos, regulados
+por el Comité Olímpico Internacional (COI), se han convertido en el mayor evento deportivo internacional multidisciplinario, con más de 200 naciones participantes.
+</pre>
+</div>
+<hr>
+<br>
+
+<footer>
+  <div class="copyright">
+    <p>&copy 2019 - Sports Place.</p>
+  </div>
+  <div class="social">
+    <a href="#" class="support">Contacto</a>
+    <a href="#" class="face">Facebook</a>
+    <a href="#" class="tweet">Instagram</a>
+    <a href="#" class="linked">LinkedIn</a>
+  </div>
+  <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8945433950194!2d-70.69369018578126!3d19.4601130448445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c58b160e7e85%3A0x2d08bea29f81a27!2sInstituto%20Tecnol%C3%B3gico%20de%20las%20Am%C3%A9ricas%20(ITLA)!5e0!3m2!1ses!2sdo!4v1569460621491!5m2!1ses!2sdo" width="600" height="200" style="border:0;" ></iframe>
+  </div>
+</footer>
+</body>
+</html>
+
+<script>
+ var slideIndex = 1;
+ showDivs(slideIndex);
+ function plusDivs(n) {
+ showDivs(slideIndex += n);
+  }
+ function showDivs(n) {
+ var i;
+ var x = document.getElementsByClassName("mySlides");
+ if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+ (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ x[slideIndex-1].style.display = "block"; }
+</script>
